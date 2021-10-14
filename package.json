@@ -48,7 +48,7 @@
     "@storybook/addon-viewport": "~6.1",
     "@storybook/addons": "~6.1",
     "@storybook/cli": "~6.1",
-    "@storybook/html": "~6.1",
+    "@storybook/html": "~6.3",
     "@storybook/theming": "~6.1",
     "@types/faker": "5.1.7",
     "@types/jest": "26.0.20",
