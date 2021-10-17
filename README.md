@@ -1,35 +1,18 @@
-# Component library template
-## Setup
-This template can be used to create a component library repository using stencilJS.
+# Action Component
+This project was created cloning the 'component-library-template'
 
-A setup with this component library is recommended for components that are used by more than one project (now or in the future). Business logic should be kept out of this repository.
+## Run
+To run this project first use `npm install` to make sure all the dependencies are installed.
+Then to run the project, run `npm start`
 
-When you created your own repository with this template please follow the following instructions and change this readme according to your project setup afterwards.
+## Development Process
+This project was developed in approximately 8 hours. With the first 3 to 4 hours being used to do the setup, install all the dependencies and undestand a little bit of StencilJS and Storybook.
+There were more that I wanted to add and/or fix in the final result. However, I tried to stick to the 8 hours asked.
 
-#### 1. After installing the packages, use `npm run init` to initialize your project. You can customize the preview here: .storybook/manager.js
-#### 2. Create new components with `npm run generate` - Don't forget to use a dash in the component's name! There is already an example component in the components folder where we used Storybook Knobs and Faker, to give you an idea :)
-#### 3. Start the build and serve process with `npm start`.
+## Possible Improvements 
+Some of the things that I wanted to improve or add in the project were:
+ - Fix the layout of the 'Contact Box'. The right side of the box continues to the end of the screen, differently than the other components that left a little margin. I think this is because I used `position: absolute`. When I removed this property, I managed to achieve what I wanted. However, that way I the small "up arrow" in the box didn't stay where I wanted. I think I could have removed the position property and tried to position the arrow in the right place, but, as mentioned before, I didn't want to spend more than 8 hours.
+ - I thought about not implementing the buttons as I did and use the Action funcionality of Storybook instead. But since I had never used Storybook I decided to start with what I knew and, if there were enough time left, I would try to change it.
+ - I don't reallt know why but, in the large phone screen, the box would modify itself to be responsive (as it should) but some of the text would be cut. This didn't happen in the small phone screen. In the small one the text would reposition itself correctly. 
 
-## Features
-### Tests
-Run `test:generate-output` before running `npm start` to see the test results for the generated component tests in the preview.
-### Screenshot Testing
 
-### Configure your GitHub repository by code
-We provide some GitHub repository configuration standards, like recommended branch protection settings, with this template. You can find the configuration in `.github/settings.yml`. If you want those settings to be applied to your GitHub repository, install the GitHub Settings app on your repository (more info [here](https://github.com/apps/settings)). The app will read the `settings.yml` automatically and apply them to your repository. Afterwards, you can add or customize `settings.yml` according to your preferences.
-
-### Extend component generator
-If you want to generate more than the given files for each component, you can add an `component-config.js` on the project's base level and export an array of functions which take the component's name as value and return an array of objects, for example:
-```
-exports.extenderArr = [
-  (name) => [
-      {
-        fileName: `${name}.ts`,
-        content: `content for ${name}.ts`,
-      },
-    ]
-];
-```
-
-### Commitizen / commitlint config
-When adding a new component with the generator, a new scope with the component's title will be automatically added to commitizen and commitlint. If you want additional custom scopes, you can add them manually into the "scopes" property of .cz-config.js.
