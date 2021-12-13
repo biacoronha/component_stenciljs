@@ -41,7 +41,7 @@
     "@stencil/core": "2.9.0",
     "@stencil/router": "1.0.1",
     "@stencil/sass": "1.4.1",
-    "@storybook/addon-a11y": "~6.1",
+    "@storybook/addon-a11y": "~6.4",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-docs": "~6.1",
     "@storybook/addon-essentials": "^6.3.12",
